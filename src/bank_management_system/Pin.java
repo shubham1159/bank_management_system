@@ -83,7 +83,13 @@ public class Pin extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        try{
+        if (e.getSource()==b2) {
+            setVisible(false);
+            new main_class(pin);
+        }
+
+
+            try{
 
             String pin1 = p1.getText();
             String pin2 = p2.getText();
